@@ -18,7 +18,9 @@ export default {
       },
       backgroundImage: {
         "toggle-dark":
-          "linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)",
+          "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))",
+        instagram:
+          "linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%)",
       },
     },
   },
