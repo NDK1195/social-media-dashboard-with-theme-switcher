@@ -1,7 +1,7 @@
 function Overview({
   isLightMode,
   iconSocial,
-  borderTopColor,
+  bgTopColor,
   numberOfFollowers,
   isGrowth,
   growthNumber,
@@ -11,8 +11,14 @@ function Overview({
 }) {
   return (
     <div
-      className={`${isLightMode ? "bg-card-background-light" : "bg-card-background-dark"} ${borderTopColor} relative flex w-full flex-col items-center rounded-[5px] border-t-4 pb-6 pt-7 text-center`}
+      className={`${isLightMode ? "bg-card-background-light hover:bg-[#E1E4F0]" : "bg-card-background-dark hover:bg-[#333A55]"} relative flex w-full cursor-pointer flex-col items-center rounded-[5px] pb-6 pt-7 text-center transition-colors`}
     >
+      {/* background top */}
+      <div
+        className={`${bgTopColor} absolute left-0 top-0 h-[4px] w-full rounded-t-[5px]`}
+      ></div>
+      {/* background top */}
+
       <div className="mb-7 flex items-center gap-2">
         <img src={iconSocial} alt="icon social" />
         <span

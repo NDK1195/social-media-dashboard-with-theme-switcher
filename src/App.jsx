@@ -46,11 +46,11 @@ function App() {
               Dark Mode
             </span>
             <div
-              className={`${isLightMode ? "bg-toggle-light" : "bg-toggle-dark"} hover:bg-toggle-dark relative h-6 w-12 cursor-pointer rounded-xl`}
+              className={`${isLightMode ? "bg-toggle-light" : "bg-toggle-dark"} relative h-6 w-12 cursor-pointer rounded-xl hover:bg-toggle-dark`}
               onClick={() => setIsLightMode(!isLightMode)}
             >
               <div
-                className={`${isLightMode ? "bg-card-background-light translate-x-1" : "translate-x-7 bg-[#333A55]"} absolute top-1/2 size-4 -translate-y-1/2 rounded-full transition-all duration-300`}
+                className={`${isLightMode ? "translate-x-1 bg-card-background-light" : "translate-x-7 bg-[#333A55]"} absolute top-1/2 size-4 -translate-y-1/2 rounded-full transition-all duration-300`}
               ></div>
             </div>
           </div>
@@ -61,7 +61,7 @@ function App() {
           <Overview
             isLightMode={isLightMode}
             iconSocial={iconFacebook}
-            borderTopColor={"border-[#178FF5]"}
+            bgTopColor={"bg-[#178FF5]"}
             numberOfFollowers="1987"
             isGrowth={true}
             growthNumber="12"
@@ -69,10 +69,49 @@ function App() {
             isYoutube={false}
             isInstagram={false}
           />
+          <Overview
+            isLightMode={isLightMode}
+            iconSocial={iconTwitter}
+            bgTopColor={"bg-[#1DA1F2]"}
+            numberOfFollowers="1044"
+            isGrowth={true}
+            growthNumber="99"
+            iconGrowth={iconUp}
+            isYoutube={false}
+            isInstagram={false}
+          />
+          <Overview
+            isLightMode={isLightMode}
+            iconSocial={iconInstagram}
+            bgTopColor={"bg-instagram"}
+            numberOfFollowers="11k"
+            isGrowth={true}
+            growthNumber="1099"
+            iconGrowth={iconUp}
+            isYoutube={false}
+            isInstagram={true}
+          />
+          <Overview
+            isLightMode={isLightMode}
+            iconSocial={iconYoutube}
+            bgTopColor={"bg-[#C4032B]"}
+            numberOfFollowers="8239"
+            isGrowth={false}
+            growthNumber="144"
+            iconGrowth={iconDown}
+            isYoutube={true}
+            isInstagram={false}
+          />
         </div>
         {/* overview */}
 
         {/* overview today */}
+        <h2
+          className={`text-2xl font-bold leading-none ${isLightMode ? "text-text-light-1" : "text-white"} mb-7 lg:mb-6`}
+        >
+          Overview - Today
+        </h2>
+
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-[30px] xl:gap-y-6">
           <OverviewToday />
         </div>

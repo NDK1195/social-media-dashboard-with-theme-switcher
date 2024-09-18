@@ -1,4 +1,4 @@
 function OverviewToday() {
-  return <div>OverviewToday</div>;
+  return <div></div>;
 }
 export default OverviewToday;
