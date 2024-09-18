@@ -8,8 +8,8 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/intro-component-with-signup-form)
-- Live Site URL: [Live site URL here](https://intro-component-with-signup-form-blue-tau.vercel.app/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/social-media-dashboard-with-theme-switcher)
+- Live Site URL: [Live site URL here](https://social-media-dashboard-with-theme-switcher-gold.vercel.app/)
 
 ### Built with
 
