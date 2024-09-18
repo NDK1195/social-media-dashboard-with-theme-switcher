@@ -113,7 +113,78 @@ function App() {
         </h2>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-[30px] xl:gap-y-6">
-          <OverviewToday />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Page Views"
+            iconSocial={iconFacebook}
+            numberOfInteract="87"
+            isGrowth={true}
+            growthPercent="3"
+            iconGrowth={iconUp}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Likes"
+            iconSocial={iconFacebook}
+            numberOfInteract="52"
+            isGrowth={false}
+            growthPercent="2"
+            iconGrowth={iconDown}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Likes"
+            iconSocial={iconInstagram}
+            numberOfInteract="5462"
+            isGrowth={true}
+            growthPercent="2257"
+            iconGrowth={iconUp}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Profile Views"
+            iconSocial={iconInstagram}
+            numberOfInteract="52k"
+            isGrowth={true}
+            growthPercent="1375"
+            iconGrowth={iconUp}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Retweets"
+            iconSocial={iconTwitter}
+            numberOfInteract="117"
+            isGrowth={true}
+            growthPercent="303"
+            iconGrowth={iconUp}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Likes"
+            iconSocial={iconTwitter}
+            numberOfInteract="507"
+            isGrowth={true}
+            growthPercent="553"
+            iconGrowth={iconUp}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Likes"
+            iconSocial={iconYoutube}
+            numberOfInteract="107"
+            isGrowth={false}
+            growthPercent="19"
+            iconGrowth={iconDown}
+          />
+          <OverviewToday
+            isLightMode={isLightMode}
+            title="Total Views"
+            iconSocial={iconYoutube}
+            numberOfInteract="1407"
+            isGrowth={false}
+            growthPercent="12"
+            iconGrowth={iconDown}
+          />
         </div>
         {/* overview today */}
       </div>
